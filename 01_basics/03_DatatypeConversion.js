@@ -32,3 +32,28 @@ let stringnumber = String(somenumber)
 
 console.log(stringnumber)
 console.log(typeof stringnumber)
+
+//************************OPERATIONS***************************** 
+let str1 = "Hello"
+let str2 = " Sanidhya"
+let str3 = str1 + str2
+
+console.log(str3);
+
+console.log(1+2+"2")
+console.log("1"+2+2)
+
+console.log(true)
+console.log(+true)
+console.log(+"")
+
+
+//+true likhne pr vo pehle true naam ki string ko number format me change kr rha h aur fir print kr rha h
+//+"" here empty value or parenthesis are treated as zero[0]
+
+//learn more about prefix and postfix on mdn or ecma script
+
+let x = 3
+let y = x++;
+console.log(x)
+console.log(y)
