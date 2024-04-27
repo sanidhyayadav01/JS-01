@@ -49,9 +49,35 @@ const users = [
     }
 ]
 
-console.log(users[1].email)
-console.log(InstaUser)
-console.log(Object.keys(InstaUser))
-console.log(Object.values(InstaUser))
-console.log(Object.entries(InstaUser))
-console.log(InstaUser.hasOwnProperty('isLogged'))
+// console.log(users[1].email)
+// console.log(InstaUser)
+// console.log(Object.keys(InstaUser))
+// console.log(Object.values(InstaUser))
+// console.log(Object.entries(InstaUser))
+// console.log(InstaUser.hasOwnProperty('isLogged'))
+
+
+
+const course = {
+    coursename:"JavaScript in Hindi",
+    price:"999",
+    courseInstructor:"Hitesh"
+} 
+
+//course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+console.log(instructor)  
+
+// {
+//     "coursename";"JavaScript in Hindi",
+//     "price";"999",
+//     "courseInstructor";"Hitesh"
+// } ---->This is an API in the form an object
+
+// [
+//     {},
+//     {},
+//     {}
+// ] ---->This is an API in the forn of an array
