@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+    
+</body>
+<script>
+    // function init() {
+    //     let name = "Sanidhya";
+    //     function displayName(){
+    //         console.log(name);
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // function Outer() {
+    //     let username = "Akshu"
+    //     function Inner() {
+    //         console.log("inner function:",username);
+    //     }
+    //     Inner()
+    // }
+    // Outer();
+
+    // function myFunction() {
+    //     const name = "Sanidhya"
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const userOne = myFunction();
+    // userOne();
+
+</script>
+<script>
+
+    //---------------------Practical example of Lexical Scoping and Closure--------------------------
+
+    document.getElementById('orange').onclick = setColor("orange")
+    document.getElementById('green').onclick = setColor("green")
+
+    function setColor(color){
+        //  document.body.style.backgroundColor = `${color}`;
+        return function(){
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+    
+</script>
+</html>

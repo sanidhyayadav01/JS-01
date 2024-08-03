@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>This page is holding learnings of api requests </h1> 
+</body>
+<script>
+    const xhr = new XMLHttpRequest();
+    const requestURL = 'https://api.github.com/users/sanidhyayadav01'
+    xhr.open('GET',requestURL);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if (xhr.readyState===4) {
+            const data = this.responseText
+            console.log(data)
+        }
+    }
+    
+    xhr.send();
+    
+</script>
+</html>
